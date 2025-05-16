@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="sv" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>نظام التوثيق</title>
+    <title>Autentiseringssystem</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <div class="container">
         <div class="auth-box">
-            <h1>مرحبًا بك</h1>
+            <h1>Välkommen</h1>
             
-            <!-- تسجيل مستخدم جديد -->
+            <!-- Registrera ny användare -->
             <div class="form-section">
-                <h2>تسجيل جديد</h2>
-                <input type="text" id="regUsername" placeholder="اسم المستخدم">
-                <input type="password" id="regPassword" placeholder="كلمة المرور">
-                <button onclick="register()">تسجيل</button>
+                <h2>Ny registrering</h2>
+                <input type="text" id="regUsername" placeholder="Användarnamn">
+                <input type="password" id="regPassword" placeholder="Lösenord">
+                <button onclick="register()">Registrera</button>
                 <p id="regMessage"></p>
             </div>
 
-            <!-- تسجيل الدخول -->
+            <!-- Logga in -->
             <div class="form-section">
-                <h2>تسجيل الدخول</h2>
-                <input type="text" id="loginUsername" placeholder="اسم المستخدم">
-                <input type="password" id="loginPassword" placeholder="كلمة المرور">
-                <button onclick="login()">دخول</button>
+                <h2>Logga in</h2>
+                <input type="text" id="loginUsername" placeholder="Användarnamn">
+                <input type="password" id="loginPassword" placeholder="Lösenord">
+                <button onclick="login()">Logga in</button>
                 <p id="loginMessage"></p>
             </div>
         </div>

@@ -16,13 +16,13 @@ async function register() {
         const data = await response.json();
         
         if (!response.ok) {
-            document.getElementById('regMessage').textContent = data.message || 'فشل التسجيل';
+            document.getElementById('regMessage').textContent = data.message || 'Registreringen misslyckades';
             return;
         }
         
-        document.getElementById('regMessage').textContent = 'تم التسجيل بنجاح!';
+        document.getElementById('regMessage').textContent = 'Registreringen lyckades!';
     } catch (error) {
-        document.getElementById('regMessage').textContent = 'حدث خطأ في الاتصال';
+        document.getElementById('regMessage').textContent = 'Ett anslutningsfel har inträffat';
     }
 }
 
@@ -42,13 +42,13 @@ async function login() {
         const data = await response.json();
         
         if (!response.ok) {
-            document.getElementById('loginMessage').textContent = data.message || 'فشل الدخول';
+            document.getElementById('loginMessage').textContent = data.message || 'Inloggningen misslyckades';
             return;
         }
         
         localStorage.setItem('token', data.token);
         window.location.href = 'dashboard.html';
     } catch (error) {
-        document.getElementById('loginMessage').textContent = 'حدث خطأ في الاتصال';
+        document.getElementById('loginMessage').textContent = 'Ett anslutningsfel har inträffat';
     }
 }
