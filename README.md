@@ -20,7 +20,7 @@ Detta projekt är en del av kursen "Backend-baserad webbutveckling" och innehål
 ## API-anrop
 
 Backend finns på:  
-`https://s-kerhet.onrender.com`
+https://s-kerhet.onrender.com/
 
 ### POST /register
 json
