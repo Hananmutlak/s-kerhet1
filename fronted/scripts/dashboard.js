@@ -31,5 +31,5 @@ function logout() {
     window.location.href = 'index.html';
 }
 
-// Ladda data när sidan öppnas
+// Ladda data 
 document.addEventListener('DOMContentLoaded', loadProtectedData);
